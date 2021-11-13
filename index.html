@@ -1,0 +1,213 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Birthday Party Survey Form</h1>
+    <p id="description" class="description text-center">
+      Your time is much appreciated!
+    </p>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What time would you prefer when going to birthday parties?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected   value>Select</option>
+        <option value="Day time">Day time</option>
+        <option value="Lunch time">Lunch time</option>
+        <option value="Night time">Night time</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you like attending birthday parties?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite part when attending birthday parties?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="jamming">Jamming</option>
+        <option value="food trip">Food Trip</option>
+        <option value="party games">Party Games</option>
+        <option value="none">None</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What are your all-time favorite foods in Birthday parties?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Shanghai"
+          type="checkbox"
+          class="input-checkbox"
+        />Shangai</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="meatballs"
+          type="checkbox"
+          class="input-checkbox"
+        />Meatballs</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fried chicken"
+          type="checkbox"
+          class="input-checkbox"
+        />Fried Chicken</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="adobo"
+          type="checkbox"
+          class="input-checkbox"
+        />Adobo</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="buttered chicken"
+          type="checkbox"
+          class="input-checkbox"
+        />Buttered Chicken</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="lechon baboy"
+          type="checkbox"
+          class="input-checkbox"
+        />Lechon Baboy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="kare kare"
+          type="checkbox"
+          class="input-checkbox"
+        />Kare Kare</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="sinigang"
+          type="checkbox"
+          class="input-checkbox"
+        />Sinigang</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="kilawin"
+          type="checkbox"
+          class="input-checkbox"
+        />kilawin</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bulalo"
+          type="checkbox"
+          class="input-checkbox"
+        />Bulalo</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
